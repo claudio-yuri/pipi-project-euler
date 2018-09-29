@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-include("lib/exercise_01.php");
+include("lib/excercise_01.php");
+include("lib/excercise_02.php");
 
 final class ProjectEulerTest extends TestCase
 {
@@ -14,6 +15,10 @@ final class ProjectEulerTest extends TestCase
             233168,
             excercise_01()
         );
+    }
+
+    public function testExcercise02(){
+        $this->assertEquals(4613732, excercise_02());
     }
 }
 
