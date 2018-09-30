@@ -17,5 +17,4 @@ function excercise_02(){
     return $accumulator;
 }
 
-print excercise_02();
 ?>
