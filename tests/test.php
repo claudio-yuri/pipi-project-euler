@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-foreach (glob("lib/*.php") as $filename)
+foreach (glob("lib/excercise*.php") as $filename)
 {
     include $filename;
 }
@@ -29,6 +29,9 @@ final class ProjectEulerTest extends TestCase
     }
     public function testExcercise04(){
         $this->assertEquals(906609, getLargestPalindrom());
+    }
+    public function testExcercise05(){
+        $this->assertEquals(232792560, excercise_05());
     }
 }
 
