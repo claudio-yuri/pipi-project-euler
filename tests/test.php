@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-include("lib/excercise_01.php");
-include("lib/excercise_02.php");
-include("lib/excercise_03.php");
+foreach (glob("lib/*.php") as $filename)
+{
+    include $filename;
+}
+
 
 final class ProjectEulerTest extends TestCase
 {
@@ -24,6 +26,9 @@ final class ProjectEulerTest extends TestCase
     public function testExcercise03(){
         $primefactors = getPrimeFactors(600851475143);
         $this->assertEquals(6857, end($primefactors));
+    }
+    public function testExcercise04(){
+        $this->assertEquals(906609, getLargestPalindrom());
     }
 }
 
