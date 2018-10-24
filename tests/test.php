@@ -36,6 +36,9 @@ final class ProjectEulerTest extends TestCase
     public function testExcercise06(){
         $this->assertEquals(25164150, excercise_06());
     }
+    public function testExcercise07(){
+        $this->assertEquals(104743, excercise_07());
+    }
 }
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-function excercise06(){
+function excercise_06(){
     $max = 100;
     $sumOfSquares = 0;
     $sum = 0;
